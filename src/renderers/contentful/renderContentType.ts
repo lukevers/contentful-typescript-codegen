@@ -59,7 +59,7 @@ function renderContentTypeFields(fields: Field[], localization: boolean): string
 
 function renderSys(sys: Sys) {
   return `
-    contentTypeId: '${sys}';
+    contentTypeId: '${sys.id}';
     sys: {
       id: string;
       type: string;

@@ -46,6 +46,6 @@ function renderContentTypeFields(fields, localization) {
         .join("\n\n");
 }
 function renderSys(sys) {
-    return "\n    contentTypeId: '" + sys + "';\n    sys: {\n      id: string;\n      type: string;\n      createdAt: string;\n      updatedAt: string;\n      locale: string;\n      contentType: {\n        sys: {\n          id: '" + sys.id + "';\n          linkType: 'ContentType';\n          type: 'Link';\n        }\n      }\n    }\n  ";
+    return "\n    contentTypeId: '" + sys.id + "';\n    sys: {\n      id: string;\n      type: string;\n      createdAt: string;\n      updatedAt: string;\n      locale: string;\n      contentType: {\n        sys: {\n          id: '" + sys.id + "';\n          linkType: 'ContentType';\n          type: 'Link';\n        }\n      }\n    }\n  ";
 }
 //# sourceMappingURL=renderContentType.js.map
